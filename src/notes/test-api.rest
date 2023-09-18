@@ -1,0 +1,30 @@
+GET http://localhost:3001/
+
+###
+GET http://localhost:3001/notes
+
+###
+GET http://localhost:3001/notes/1
+
+###
+POST http://localhost:3001/notes
+content-type: application/json
+
+{
+  "content": "JAVA is cumbersome",
+  "important": false
+}
+
+###
+PUT http://localhost:3001/notes/1
+content-type: application/json
+
+{
+    "id": 1,
+    "content": "HTML is eassssy",
+    "important": false
+}
+
+###
+DELETE http://localhost:3001/notes/1
+

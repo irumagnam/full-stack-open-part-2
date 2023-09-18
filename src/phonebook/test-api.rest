@@ -1,0 +1,30 @@
+GET http://localhost:3001/
+
+###
+GET http://localhost:3001/persons
+
+###
+GET http://localhost:3001/persons/1
+
+###
+POST http://localhost:3001/persons
+content-type: application/json
+
+{
+  "name": "Albert Einstein",
+  "number": "00-00000000"
+}
+
+###
+PUT http://localhost:3001/persons/1
+content-type: application/json
+
+{
+    "id": 1,
+    "name": "Arto Hellas",
+    "number": "040-7890123"
+}
+
+###
+DELETE http://localhost:3001/persons/2
+
